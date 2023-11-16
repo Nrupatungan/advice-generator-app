@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./app/dist/output.css">
+
+  <script src="./app/js/script.js" defer></script>
+</head>
+<body class="bg-Dark_Blue font-Manrape  min-h-screen grid place-items-center px-3 relative">
+
+  <main class="bg-Dark_Grayish_Blue w-full pt-12 px-6 pb-2 rounded-xl max-w-[367px] md:max-w-[545px]">
+
+    <article class="text-center relative">
+      
+      <h1 class="text-Neon_Green uppercase text-xs tracking-[3px] mb-6">Advice # <span id="advice-num"></span></h1>
+      
+      <blockquote class="mb-5 md:mb-8">
+        <p id="advice" class="before:content-['\201C'] after:content-['\201D'] text-Light_Cyan text-2xl text-center md:text-3xl"></p>
+      </blockquote>
+      
+      <img id="divider" src="./assets/images/pattern-divider-mobile.svg" alt="divider-icon" class="mx-auto md:hidden">
+      
+      <img src="./assets/images/pattern-divider-desktop.svg" alt="dice-icon" class="hidden mx-auto md:block">
+      
+      <button id="btn" class="bg-Neon_Green rounded-full p-4 w-14 static translate-x-[1%] translate-y-[65%] hover:shadow-[0px_0px_20px_5px_rgba(82,255,168,0.57)] transition-all delay-75 ease-linear active:scale-50">
+        
+        <img class="mx-auto" src="./assets/images/icon-dice.svg" alt="dice-icon">
+      
+      </button>
+    </article>
+  
+  </main>
+  
+  <footer class="text-sm text-center absolute bottom-1">
+    <p class="text-white">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-fuchsia-400 underline">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/Nrupatungan" class="text-lime-400 underline">Dinesh Sake</a>.</p>
+  </footer>
+</body>
+</html>
